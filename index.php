@@ -90,8 +90,26 @@
 </head>
 <body>
     <header>
-        header
+        <!-- navbar -->
+        <ul class="nav">
+            <li>
+                Introduzione
+            </li>
+            <li>
+                Norme sulla privacy
+            </li>
+            <li>
+                Termini di servizio
+            </li>
+            <li>
+                Tecnologie
+            </li>
+            <li class="selected">
+                Domande frequenti
+            </li>
+        </ul>
     </header>
+
     <div class="container">
         <?php 
             foreach($arr_questions as $element) {
@@ -101,6 +119,7 @@
 
                 //print questions
                 echo "<h1 class='title' >$_Q</h1>";
+
                 foreach($para_in_answer as $para) {
                     $para_link = str_ireplace("/op", "<a href='#!' class='link'>", $para);
                     $para_link_final = str_ireplace("/c", "</a>", $para_link);
