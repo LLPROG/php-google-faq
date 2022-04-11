@@ -39,3 +39,12 @@ footer {
     text-decoration: none;
     color: blue;
 }
+
+.order-list li {
+    margin-left: 2rem;
+}
+
+.alpha-list li {
+    margin-left: 2rem;
+    list-style: lower-alpha;
+}
